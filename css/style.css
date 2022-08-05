@@ -1,0 +1,74 @@
+:root {
+    --color: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+/* start navbar  */
+.button1 {
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border-radius: 25px;
+    border: none;
+    color: white;
+    width: 180px;
+    padding: 12px;
+    font-weight: bold;
+}
+@media (max-width:991px ){
+    .button1{
+        display: none;
+    }
+}
+.button1:hover {
+    opacity: 0.4;
+}
+
+.hov1 {
+    overflow: hidden;
+    position: relative;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.hov1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-image: var(--color);
+    bottom: -44%;
+    left: -100%;
+}
+@media (max-width:991px) {
+    .hov1::before{
+        display: none;
+    }
+    
+}
+.hov1:hover {
+    overflow: visible;
+    color: black;
+}
+
+.hov1:hover::before {
+    left: 0 !important;
+}
+@media (max-width:991px){
+    .navbar-collapse{
+        flex-basis: 100%;
+flex-grow: 1;
+align-items: center;
+display: flex;
+margin-top: 22px;
+background-color: black;
+border-radius: 7px;
+padding: 15px;
+    }
+}
+.navbar .navbar-toggler{
+    color:black;
+    font-size: 22PX;
+    BORDER:NONE;
+    border-color: white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+/* end navbar  */
