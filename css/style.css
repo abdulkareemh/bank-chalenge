@@ -338,4 +338,8 @@
 .footer li:hover{
     color:hsl(192, 70%, 51%);
 }
+
+.social-itmes .hh:hover svg path{
+    fill: hsl(192, 70%, 51%);
+  }
 /* end footer  */
