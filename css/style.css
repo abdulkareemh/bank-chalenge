@@ -37,7 +37,7 @@
 .hov1 {
     overflow: hidden;
     position: relative;
-    color: #D3D3D7;
+/*    color: #D3D3D7; */
     cursor: pointer;
 }
 
